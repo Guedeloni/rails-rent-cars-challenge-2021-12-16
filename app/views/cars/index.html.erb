@@ -1,0 +1,30 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<%=image_url('index_picture.jpg') %>);">
+  <div class="container">
+    <h1><strong>CAR FOR ALL !</strong></h1>
+    <br>
+    <div class="box-between">
+      <p>Select your car !</p>
+      <%= link_to "Home", root_path, class: "btn btn-ghost" %>
+    </div>
+  </div>
+</div>
+
+<div class="container d-flex justify-content-around mt-5">
+  <div class="grid text-decoration-none" >
+    <%# <% @cars_per_price = @cars.sort_by { :price_per_day } %>
+    <% @cars.each do |car| %>
+      <%= link_to car_path(car) do %>
+        <div class="card-product">
+          <% url = "https://loremflickr.com/540/540/" + car.brand + ","
+                                                      + car.model + "/all" %>
+          <img src= "<%= url %>" />
+          <div class="card-product-infos">
+            <h2><%= car.brand %> - <%= car.model %></h2>
+            <p><%= car.address %></p>
+            <h2><%= car.price_per_day %> € / day</h2>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

@@ -1,14 +1,16 @@
 <%# <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p> %>
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://loremflickr.com/1024/768/car);">
+<div class="banner-home" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<%=image_url('home_picture.jpg') %>);">
   <div class="container">
     <h1><strong>CAR FOR ALL !</strong></h1>
     <p>Rent your neighbor's car.</p>
     <p>Simply !</p>
-    <div class="d-flex justify-content-end">
-      <a class="btn btn-ghost " href="#">Search now</a>
+    <br>
+    <%# <div class="d-flex justify-content-end"> %>
+    <%= link_to "Search now !", cars_path, class: "btn btn-ghost" %>
+      <%# <a class="btn btn-ghost " href="#">Search now !</a> %>
       <%#= link_to "Write a story", "#", class: "btn btn-ghost" %>
-    </div>
+    <%# </div> %>
   </div>
 </div>

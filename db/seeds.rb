@@ -24,7 +24,7 @@ puts 'Ok for user'
 
 puts 'Creating 10 cars...'
 brands = ["Renault", "Renault", "Audi", "Audi", "Citroën", "Citroën", "Honda", "Honda", "Peugeot", "Peugeot"]
-models = ["Super 5", "Zoe", "A8", "A3", "DS4", "2CV", "Honda-T1", "Honda-T2", "403", "3008"]
+models = ["Super 5", "Zoe", "A8", "A3", "DS4", "2CV", "Civic", "N600", "403", "3008"]
 places = ["rue de la Gare, Nantes", "rue Henri IV, Nantes", "rue des Trois Croissants, Nantes",
           "ch. de la Madeleine, Nantes", "rue de Gigant, Nantes", "rue des Tulipes, Rezé",
           "ch. de la Cour, Ste.-Luce-sur-Loire", "bd. J. Verne, Nantes", "rue en Pierre, Nantes",
