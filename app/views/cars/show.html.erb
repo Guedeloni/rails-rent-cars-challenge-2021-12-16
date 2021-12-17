@@ -8,3 +8,40 @@
     </div>
   </div>
 </div>
+
+<div class="container mt-5 d-flex justify-content-between product-info">
+  <div>
+    <% url = "https://loremflickr.com/540/540/" + @car.brand + ","
+                                                + @car.model + "/all" %>
+    <img src= "<%= url %>" />
+    <h2 class="mt-3"><%= @car.brand %></h2>
+    <h2><em><%= @car.model %> - <%= @car.year_of_production %></em></h2>
+    <br>
+    <h3><%= @car.address %></h3>
+  </div>
+  <div class="align-self-center">
+    <h1><%= @car.price_per_day %> € / day</h1>
+  </div>
+  <div>
+    <h2>Book here</h2>
+    <%= simple_form_for [@car, @car.bookings.new] do |f| %>
+      <%= f.input :starts_at, as: :string,
+        input_html: {class: "datepicker"}
+        # data: {
+        #   controller:"flatpickr",
+        #   flatpickr_date_format: "Y-m-d",
+        #   flatpickr_min_date: Time.zone.now
+        # }
+        %>
+      <%= f.input :ends_at, as: :string,
+        input_html: {class: "datepicker"}
+        # data: {
+        #   controller:"flatpickr",
+        #   flatpickr_date_format: "Y-m-d",
+        #   flatpickr_min_date: Time.zone.now }
+        %>
+      <%= f.submit "Validate", class: "btn btn-ghost"%>
+    <% end %>
+
+  </div>
+</div>

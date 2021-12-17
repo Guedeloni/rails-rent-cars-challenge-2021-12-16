@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2021_12_16_164544) do
     t.bigint "car_id", null: false
     t.date "starts_at"
     t.date "ends_at"
-    t.boolean "accepted"
+    t.boolean "accepted", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["car_id"], name: "index_bookings_on_car_id"
