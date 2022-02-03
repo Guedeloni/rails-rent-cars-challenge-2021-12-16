@@ -1,5 +1,7 @@
 # Rails Rent Cars
 
+## Car rental between individuals
+
 Exercice for the RNCP6 certification at Le Wagon.<br>
 Develop, alone in 8 hours, an application with Ruby on Rails, a given DB scheme and the following specifications.
 
