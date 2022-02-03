@@ -9,8 +9,8 @@ You need to create a car rental marketplace between individuals
 - As a user, I can access the home page.
 - As a user, I can see the list of all cars.
 - As a user, I can access the details of a car.
-- - As a user, I can reserve a car.
-<br>
+- As a user, I can reserve a car.
+
 - Follow the conventions of `rails`.
 - The home page must contain a link to the car list.
 - The page listing the cars must contain links to the details of each car.
