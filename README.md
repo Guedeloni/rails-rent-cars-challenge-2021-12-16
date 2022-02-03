@@ -6,11 +6,13 @@ Develop, alone in 8 hours, an application with Ruby on Rails, a given DB scheme 
 ```
 You need to create a car rental marketplace between individuals
 ```
+User interface :
 - As a user, I can access the home page.
 - As a user, I can see the list of all cars.
 - As a user, I can access the details of a car.
 - As a user, I can reserve a car.
-<br>
+
+Specifications :
 - Follow the conventions of `rails`.
 - The home page must contain a link to the car list.
 - The page listing the cars must contain links to the details of each car.
