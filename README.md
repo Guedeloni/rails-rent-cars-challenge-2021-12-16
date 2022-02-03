@@ -1,5 +1,37 @@
 # Rails Rent Cars
 
+Exercice for the RNCP6 certification at Le Wagon.<br>
+Develop, alone in 8 hours, an application with Ruby on Rails, a given DB scheme and the following specifications.
+
+```
+You need to create a car rental marketplace between individuals
+```
+- As a user, I can access the home page.
+- As a user, I can see the list of all cars.
+- As a user, I can access the details of a car.
+- - As a user, I can reserve a car.
+<br>
+- Follow the conventions of `rails`.
+- The home page must contain a link to the car list.
+- The page listing the cars must contain links to the details of each car.
+- The car details page must contain a link to return to the page listing all cars.
+- The car details page must contain the form for making a reservation.
+- The reservation form must use a date selector to facilitate the entry of dates <a href="https://flatpickr.js.org/examples/" target="_blank">Flatpickr</a> to facilitate the entry of dates, such as <a href="https://flatpickr.js.org/examples/#range-calendar" target="_blank">range</a>, most suitable for entering a period.
+- When submitting the reservation form, the user should be redirected to the car details page and a <a href="https://www.rubyguides.com/2019/11/rails-flash-messages/" target="_blank">notification flash</a> must be displayed to confirm the reservation.
+
+### Home page
+![image](https://user-images.githubusercontent.com/89397894/152423151-346ba578-4032-437e-9c09-a241ae5bbceb.png)
+
+### Index page with random pictures matching keywords (LoremFlickr)
+![image](https://user-images.githubusercontent.com/89397894/152425397-fcdbe9d1-6ed7-4732-b564-ce79753ec164.png)
+
+### Show of a car
+![image](https://user-images.githubusercontent.com/89397894/152425552-309f53b1-0f82-4efd-8af7-ea93ca3385a6.png)
+
+### Booking with Flatpickr
+![image](https://user-images.githubusercontent.com/89397894/152425713-03c76559-b7a8-4b3b-a02d-fa8a2562f087.png)
+
+
 Dans cet exercice, vous devez implémenter des fonctionnalités dans une application web `rails` à partir du cahier des charges spécifié ci-dessous et correspondant à votre sujet :
 
 ```
